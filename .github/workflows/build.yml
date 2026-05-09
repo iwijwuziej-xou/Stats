@@ -21,9 +21,10 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+          cache-dependency-path: '**/package.json'   # <-- IMPORTANT FIX
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-package-lock            # <-- IMPORTANT FIX
 
       - name: Build plugin
         run: npm run build
