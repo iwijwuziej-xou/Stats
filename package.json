@@ -1,0 +1,12 @@
+{
+  "name": "stats",
+  "version": "1.0.0",
+  "description": "Voice Analyzer overlay for Discord iOS (KettuTweak).",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/index.tsx --bundle --format=cjs --platform=browser --outfile=dist/index.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}
